@@ -24,8 +24,9 @@ export const HW3 = () => {
     setCurrentText(event.currentTarget.value);
   };
 
+
   const handleSave = () => {
-      setTexts(texts);
+      setTexts([currentText, ...texts]);
       setCurrentText('')
   };
 
